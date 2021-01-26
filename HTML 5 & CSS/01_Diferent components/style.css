@@ -1,0 +1,102 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color:black;
+}
+body{
+    background-color:whitesmoke;
+    
+}
+.box{
+    width: 600px;
+    padding: 10px;
+    border: 2px solid #030303; 
+    overflow: hidden;
+    margin: 20px auto;
+}
+}
+.navegation__menú {
+    margin: 0;
+}
+.navegation__menú h2 {
+    text-align: center;
+    margin: 0;
+}
+.navegation__menú__list{
+    padding:0;
+    text-align: center;
+}
+.navegation__menú__list li{
+    text-decoration: none;
+    display: inline-block;
+    margin-left:6px;
+    align-content: center;
+    padding: 10px;
+    background-color: #b5c0c5;
+    border-radius:6px;
+    color: white;
+    border: black 1px solid;
+}
+.navegation__menú__list li:hover{
+    background-color: rgb(101, 127, 243);
+
+}
+#section1 img{
+    float: left;
+    width:50%;
+    padding-right: 15px;
+}
+#section1 h2{
+text-align: center;
+}
+#section1 p{
+    text-align: justify;
+}
+#section1 p:nth-of-type(3){
+    float: left;
+}
+#section2{
+    background-image: url(/cielo.jpeg);
+}
+#section2, #section3, #section4 {
+    text-align: center;
+    }
+#section2 img{
+    width: 15px;
+}
+#section2 ul, ol{
+    padding: 0px;
+}
+
+#section2 ul>li{
+    list-style: none;
+}
+#section2 ol li{
+    font-size: 10px;
+    list-style-position: inside;
+}
+#section2 ::marker{
+
+}
+#section3 p:nth-of-type(1){
+    color: blue;
+}
+#section3 span:nth-of-type(1){
+    color: red;
+}
+#section3 span:nth-of-type(2){
+    text-decoration: line-through;
+}
+#section4 table{
+    margin: auto;
+}
+#section4 table td {
+    border: blue 2px solid;
+    width: 50px;
+    height: 30px;
+    padding:5px;
+    text-align: left;
+}

@@ -1,0 +1,38 @@
+<script>
+        //Insertar un objeto en nuestra base de datos firebase
+
+        //Guardar en una variable la URL a mi instancia firebase y a la BBDO que quiero utilizar.
+
+        //Además, necesitamos indicarle a Firebase en qué base de datos queremos guardar nuestra información.
+
+        //Endpoint (url+notes.json)
+        const url='https://vue-test-34e11-default-rtdb.europe-west1.firebasedatabase.app/notes.json'
+
+        //Creamos un objeto que representa una nota recordatoria
+
+        const NOTA={
+            title:'Aprender Angular!',
+            description: 'Tutorial Udemy',
+            creationDate: new Date()
+        }
+
+        //El método fetch, a pesar de su nombre, no solo "trae" información de una API/BBDD; si no que también realiza otras operaciones HTPP (GET,POST, PUT, DELETE, UPDATE)
+
+        //Por defecto el fetch hace un get.
+
+        const POST_OPTIONS={
+            method:'POST',
+            headers:{
+                //Conjunto de parámetros para configurar nuestra HTTP Request
+                'Content-Type':'aplication/json' //¿Qué tipo de información queremos enviar?
+            },
+            body:JSON.stringify(NOTA)//Transforma el objeto en texto. 
+
+        }
+
+        fetch(url,POST_OPTIONS).
+        catch(error=>{
+            console.log("Ha ocurrido un error:",error)
+        })
+
+    </script>

@@ -1,0 +1,457 @@
+
+* {   
+    margin: 0; 
+    padding: 0;
+    }
+
+body {
+    font-size: 20px;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+h1{
+    margin-left: 65px;
+    margin-right:280px; /* buscando encuadrar exactamente igual que las images*/
+}
+p{
+    margin-left: 65px;
+    margin-right:120px; /* buscando encuadrar exactamente igual que las images*/
+}
+section p{
+    margin: 0; /*Diferente margin para las p dentro de las sections*/
+}
+.greyblue {
+    color:hsl(208, 11%, 55%)
+}
+
+
+/* TOP */
+header{
+    background-image: url(/Huddle/images/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%, 96%);
+}
+.header-top {
+    background-image: url("./images/bg-hero-desktop.svg");
+    background-color: hsl(193, 100%, 96%);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh; 
+    padding: 1.2rem 2rem 3rem 2rem;    
+}
+
+#top-navbar img{
+height: 50px;
+}
+#logo{
+    margin-top:50px;
+}
+
+#top-navbar {    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-left: 65px ; /* no he podido cuadrarlo de otra manera (ajustando pxls) */
+    margin-top: 0px;
+}
+
+#tryit {
+    display: flex;
+    text-decoration: none;
+    background-color:white;
+    width: 160px;    
+    color:black;
+    align-items:center;
+    justify-content: center;
+    font-size: smaller;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.09);
+    font-size: 0.6em;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    height: 20px;
+}
+
+#main-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+
+}
+
+#intro {
+    width: 30%;
+}
+
+#main-container h1 {
+    margin-bottom: 2rem;
+    font-family: "Poppins";
+    font-weight: 600;
+
+}
+
+#intro p{
+    margin-bottom: 2rem;
+}
+
+#main-container img{ 
+    width: 60%; 
+    
+}
+
+button {
+    border-radius: 3rem; 
+    padding: 0.8rem 3rem;
+    background-color:hsl(322, 100%, 66%); 
+    color: #fff;
+    border-color: transparent;
+    margin-left: 190px;
+    margin-top: 35px;
+}
+
+
+
+main {
+    color: hsl(208, 11%, 55%);
+    width: 80%;
+    margin: 0 auto; 
+    
+}
+
+h2 {
+    color: #000;
+    margin-bottom: 1rem;
+    font-family: "Open Sans Bold";
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem;
+    margin: 10%; 
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem 4rem rgb(158, 158, 158);
+    
+}
+
+.container section{
+    padding: 1rem 3rem;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+.container img{
+    width: 25rem;
+}
+
+/* F O O T E R  */
+footer {
+    background-color:hsl(192, 100%, 9%);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 15rem;
+}
+
+
+#ready-box {
+    background-color: white;
+    width: 35rem;
+    
+    padding: 3% 1.5%; 
+    
+    align-items: center;
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgb(71, 71, 71);
+    position: absolute; 
+    bottom: 80%; /*al usar los porcent. resulta responsive, mejor que con px*/
+    left: 32%;
+    text-align: center;
+}
+
+#ready-box button{
+    margin: 1rem;
+    padding: 1.5rem 6rem;
+}
+
+#bottom-logo{
+    filter: grayscale(100%) invert(100%) brightness(200%); 
+    padding: 2rem 1rem;
+}
+
+#footer-content {
+    margin: 10%;
+    margin-bottom: 1%;
+}
+
+#info {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    font-family: "Open Sans";
+}
+
+.column {
+    
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: auto; 
+}
+
+.links{
+    flex-direction: row;
+    margin: auto 0;
+    width: 7rem;
+}
+
+.links span{
+    filter: invert(100%);
+    padding: 9%;
+    border-radius: 50%; 
+    border: 2px solid black;
+    margin: 1rem;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+}
+
+.column a, .column div {
+    padding-bottom: 1rem;
+}
+
+.column a{
+    text-decoration: none; 
+    color: white;
+}
+.column div {
+    display: flex;
+    align-items: flex-start; 
+}
+
+.column img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.column2{
+    align-self: center;
+    filter:invert(100%)
+}
+#copyright {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1%;
+    font-size: 1rem;
+    margin-right:190px;
+    margin-bottom: 50px;
+}
+
+
+
+#attribution { 
+    font-size: 0.6rem; 
+    
+    margin: 1% auto;
+    margin-bottom: 0;
+}
+
+#attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./Poppins-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(./OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(./OpenSans-Bold.ttf) format('truetype');
+}
+
+@media only screen and (max-width:880px) {
+html{
+    box-sizing: border-box;
+}
+    #main-container h1 {
+        margin-bottom: 2rem;
+        font-family: "Poppins";
+        font-weight: 600;
+    }
+    
+    #main-container{
+        text-align: center;
+    }
+
+    body {
+        font-size: 20px;
+        font-family: "Open Sans";
+        font-weight: 400;
+        
+    }
+    header{
+        background-image: url(/Huddle/images/bg-hero-mobile.svg);
+        background-color:hsl(193, 100%, 96%);
+    }
+    header button{
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    
+    #top-navbar{
+        display: flex;
+        flex-direction: row;
+        margin: 0 5% 5% 5%;
+        padding-top:5%;
+        align-items: center;
+    }
+    #top-navbar img{
+        height: 25px;
+        margin:0px;
+    }
+    #tryit {
+        margin:0px;
+        width: 100px;
+    }
+    
+    h1{
+        margin-left: 25px;
+        margin-right:25px; /* buscando encuadrar exactamente igual que las images*/
+        margin-top:50px;
+        font-size: 1.8rem;
+    }
+    p{
+        margin-left: 25px;
+        margin-right:25px; /* buscando encuadrar exactamente igual que las images*/
+    }
+    section p{
+        margin: 0; /*Diferente margin para las p dentro de las sections*/
+    }
+    .header-top {
+        background-image: url("./images/bg-hero-mobile.svg");
+    }
+    body {
+        font-size: 18px;
+    }
+    #main-container{
+        flex-direction: column;
+    }
+     /*___________________________________________________ NAV-BAR*/
+    #top img {
+     
+        width: 40%;
+    }
+
+    #top-navbar button {
+        padding: 0.2rem 1rem;
+    }
+
+    #intro {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    /* _______________________________________________MAIN (SECCIONES) */
+
+    .container {
+        padding: 4rem 2rem;
+        flex-wrap: wrap; 
+        margin:0;
+        margin-top: 25px;
+    }
+    .container section {
+        width: 80%;
+        text-align: center;
+        padding: 0.8rem;
+        font-size: 1.1rem;       
+    }
+    .container img{
+        width: 100%;
+    }    
+    .container.reverse{
+        margin:0;
+        margin-top: 25px;
+    }
+
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    footer {
+        margin-top: 15rem;
+    }
+    #ready-box {
+        position: static;
+        width: 90%;
+        margin: auto;
+        transform: translate(0%,-50%);
+        font-size: 0.7rem;
+    }
+    #ready-box h2 {
+        margin: 1rem;
+    }
+    #ready-box button{
+        margin-bottom: 1rem;
+        padding: 1rem 3rem;
+    }
+    #info {
+        display: flex;
+        flex-direction: column;
+    }
+    .column {
+        margin-left:0 ;      
+    }
+  
+ 
+    .social img {
+    margin-left:10px ;
+    margin-right: 10px;
+    
+    }
+
+    #footer-content {
+        margin-bottom: auto;
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    #footer-content img {
+  padding-left: 0;
+    }
+    #copyright {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 20px;
+        
+    }
+ 
+    .social{
+        display: flex;
+        justify-content: center;
+    }
+
+    #attribution { 
+        margin: auto;
+        margin-bottom: 0;
+    }
+    #locmailtelf{
+        margin-bottom:50px ;
+
+    }
+    .social img{
+        filter:invert(100%);
+    }
+
+    
+}
