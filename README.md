@@ -31,6 +31,7 @@ I would like to say that the projects shown will be constant evolving. They will
 Popular Data Structures: Array, Linked List, Queue, Stack, Tree, Graph, Hash Table
 # Algorithms
 Of popular challenge website: Codewars
+
 **Through the projects I have practiced and learned to:** 
  1. Setup a productive development environment
  2. Write HTML, CSS & JavaScript
