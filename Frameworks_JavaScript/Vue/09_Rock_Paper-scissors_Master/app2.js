@@ -11,6 +11,8 @@ const app = Vue.createApp({
             showReadyToPlay:true,
             showChoices:false,
             showNumberOfAttempts:false,
+            result:"",
+            showResult:false,
             
             //Player options
             showPaper:false,
@@ -48,7 +50,8 @@ const app = Vue.createApp({
             this.showPlayAgain=true
             this.showReadyToPlay=false
             this.showChoices=true
-            this.showNumberOfAttempts=false
+            this.showNumberOfAttempts=false,
+            this.showResult=true
         
         },
         getRandomValueFromArray() {
@@ -70,23 +73,31 @@ const app = Vue.createApp({
         updateScore(){
             if(this.showPaper && this.showScissorsComputer ){
                 this.score--
+                this.result="You lose"
                 
             }else if (this.showPaper && this.showRockComputer ){
                 this.score--
+                this.result="You lose"
             }
             else if (this.showRock && this.showPaperComputer ){
                 this.score++
+                this.result="You win"
             }
             else if (this.showRock && this.showScissorsComputer ){
                 this.score++
+                this.result="You win"
             }
             else if (this.showScissors && this.showPaperComputer ){
                 this.score++
+                this.result="You win"
             }
             else if (this.showScissors && this.showRockComputer ){
                 this.score--
+                this.result="You lose"
             }
-            //añadir mensaje: empate! 
+            else{
+                this.result="Tie in the game"
+            }
         },
         playAgain(){
             this.showMainOptions=true
@@ -101,6 +112,7 @@ const app = Vue.createApp({
             this.computerSelects=""
             this.showChoices=false
             this.showNumberOfAttempts=true
+            this.result=""
 
         }
     },

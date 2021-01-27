@@ -35,10 +35,13 @@
     </header>
     <main>
       <!--Player-->
+      
       <div id="resultado" class="mt-2 mt-md-5">
+        <h3 class="text-light text-center" v-show="showResult">{{result}}</h3>
         <div class="d-flex col-md-6 mx-auto justify-content-between flex-column flex-md-row">
+          
           <div id="divEleccion" class="col-5 col-md-4 mx-auto text-center">
-            <h3 v-show="showChoices"class="text-light">Your choice:</h3>
+            <h3 v-show="showChoices"class="text text-light">Your choice:</h3>
             <!--paper-->
             <div v-show="showPaper" class="rounded-circle icon border-primary mt-n1  mx-auto" id="ElePaper">
               <img src="/images/icon-paper.svg" alt="" class="center">
@@ -65,7 +68,7 @@
           <!--Computer-->
           <div class="d-flex-column m-auto text-center text-light my-4 mx-4" id="show">
             <h2></h2>
-            <button :disabled="numberOfGames==0" v-show="showPlayAgain" @click="playAgain" type="button" class="btn btn-light btn-lg"
+            <button :disabled="numberOfGames==0" v-show="showPlayAgain" @click="playAgain" type="button" class="btn btn-primary btn-lg"
               id="playAgain">Play Again</button>
           </div>
 
@@ -90,25 +93,24 @@
 
       </div>
       <!--Start game-->
-      <div class="d-flex col-6 mx-auto icons mt-n1 justify-content-center w-auto">
-        <div v-show="showMainOptions" class="">
-          <button @click="playerSelect" name="paper" class="rounded-circle icon border-primary mt-n1" id="paper">
+      <div class="d-flex col-6 justify-content-center w-auto">
+        <div v-show="showMainOptions">
+          <button @click="playerSelect" name="paper" class=" game rounded-circle icon border-primary mt-n1" id="paper">
             <img src="/images/icon-paper.svg" alt="paper" class="center">
           </button>
-          <button @click="playerSelect" name="piedra" class="rounded-circle icon border-danger col align-self-end"
+          <button @click="playerSelect" name="piedra" class="game rounded-circle icon border-danger col align-self-end"
             id="piedra">
             <img src="/images/icon-rock.svg" alt="rock" class="center">
           </button>
-          <button @click="playerSelect" name="tijera" class="rounded-circle icon border-warning mt-n1" id="tijera">
+          <button @click="playerSelect" name="tijera" class="game rounded-circle icon border-warning mt-n1" id="tijera">
             <img src="/images/icon-scissors.svg" alt="scissors" class="center">
           </button>
         </div>
       </div>
-
     </main>
 
-    <footer class="d-flex col-6 mx-auto justify-content-end flex-column mt-5">
-      <button type="button" class="btn btn-outline-light w-md-25 align-self-end" data-bs-toggle="modal"
+    <footer class=" d-flex col-6 mx-auto justify-content-end flex-column mt-5">
+      <button type="button" class="btn btn-outline-light w-md-25 mt-4 align-self-center" data-bs-toggle="modal"
         data-bs-target="#Rules">
         Rules
       </button>
@@ -116,19 +118,20 @@
       <div class="modal fade" id="Rules" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">RULES</h5>
-              <button type="button" data-bs-dismiss="modal" aria-label="Close"><img src="/images/icon-close.svg"
+            <div class="modal-header ">
+              <h3 class="modal-title text-center" id="exampleModalLabel">RULES</h3>
+              <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                <img src="/images/icon-close.svg"
                   alt=""></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body d-flex justify-content-center">
               <img src="/images/image-rules.svg" alt="">
             </div>
           </div>
         </div>
       </div>
 
-      <div class="attribution mt-5 text-light">
+      <div class="attribution mt-5 text-light m-6">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-warning">Frontend
           Mentor</a>.<br>
         Coded by <a class="text-warning">Claudia Ballano & Diego Lajusticia</a>.
