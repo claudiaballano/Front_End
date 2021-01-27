@@ -60,12 +60,12 @@
             <p>Choose an option</p>
           </div>
           <div v-show="showNumberOfAttempts" class="text-center text-light">
-            <h2>You have {{numberOfGames}} attempts left</h2>
+            <h5>You have {{numberOfGames}} attempts left</h5>
           </div>
           <!--Computer-->
           <div class="d-flex-column m-auto text-center text-light my-4 mx-4" id="show">
             <h2></h2>
-            <button :disabled="numberOfGames == 1" v-show="showPlayAgain" @click="playAgain" type="button" class="btn btn-light btn-lg"
+            <button :disabled="numberOfGames==0" v-show="showPlayAgain" @click="playAgain" type="button" class="btn btn-light btn-lg"
               id="playAgain">Play Again</button>
           </div>
 

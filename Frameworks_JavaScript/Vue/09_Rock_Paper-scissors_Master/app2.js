@@ -11,10 +11,12 @@ const app = Vue.createApp({
             showReadyToPlay:true,
             showChoices:false,
             showNumberOfAttempts:false,
+            
             //Player options
             showPaper:false,
             showRock:false,
             showScissors:false,
+            
             //Computer options
             showPaperComputer:false,
             showScissorsComputer:false,
@@ -104,7 +106,7 @@ const app = Vue.createApp({
     },
     watch: {
         numberOfGames(value){
-            if(value==0){
+            if(value<0){
                 console.log("ya no puedes jugar más")
             }
         }
