@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+  <!-- boostrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+  <!-- vue js -->
+  <script src="https://unpkg.com/vue@next" defer></script>
+  <!-- script js -->
+  <script type="module" src="app.js" defer></script>
+
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class=" container bg-dark">
+  <div id=app>
+    <header class="d-flex flex-row justify-content-between border border-3 rounded border-light">
+      <div class="d-flex flex-column text-light fw-bold align-items-start">
+        <h2>ROCK</h2>
+        <h2>PAPER</h2>
+        <h2>SCISSORS</h2>
+      </div>
+      <div>
+        <div class="bg-light d-flex flex-column align-items-start m-2 p">
+          <p>SCORE</p>
+          <p class="display-1 text fw-bold">{{score}}</p>
+        </div>
+      </div>
+    </header>
+    <main class="triangle">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="/images/icon-paper.svg" alt="">
+          </div>
+          <div class="col">
+            <img src="/images/icon-scissors.svg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="/images/icon-rock.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <!--Popover-->
+      <div>
+        <div>
+          <h2>RULES</h2>
+          <img src="/images/icon-close.svg" alt="">
+        </div>
+        <img src="/images/image-rules.svg" alt="">
+      </div>
+      <!--Playing field-->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>YOU PICKED</p>
+          </div>
+          <div class="col">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>THE HOUSE PICKED</p>
+          </div>
+          <div class="col">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+      <h3>{{result}}</h3>
+      <button>PLAY AGAIN</button>
+    </main>
+    <footer>
+      <button>RULES</button>
+    </footer>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
