@@ -34,10 +34,11 @@ const app = Vue.createApp({
     },
     methods: {
         playerSelect(event){
-            if(event.target.alt=="rock"){
+            if(event.target.id=="rock" || event.target.alt=="rock"){
                 this.showRock=true
                 this.userSelects="Rock"
-            }else if(event.target.alt=="paper"){
+                console.log(event.target)
+            }else if(event.target.id=="paper" || event.target.alt=="paper"){
                 this.showPaper=true
                 this.userSelects="Paper"
             }
@@ -45,6 +46,7 @@ const app = Vue.createApp({
                 this.showScissors=true
                 this.userSelects="Scissors"
             }
+            
             this.numberOfGames--
             this.getRandomValueFromArray()
             this.showMainOptions=false

@@ -97,14 +97,14 @@
         <!--Start game-->
         <div class="d-flex col-6 justify-content-center w-auto text-center">
           <div v-show="showMainOptions">
-            <button @click="playerSelect" name="paper" class=" game rounded-circle icon border-primary mt-n1" id="paper">
+            <button @click="playerSelect" id="paper" class=" game rounded-circle icon border-primary mt-n1" id="paper">
               <img src="/images/icon-paper.svg" alt="paper" class="center">
             </button>
-            <button @click="playerSelect" name="piedra" class="game rounded-circle icon border-danger col align-self-end"
+            <button @click="playerSelect" id="rock" class="game rounded-circle icon border-danger col align-self-end"
               id="piedra">
               <img src="/images/icon-rock.svg" alt="rock" class="center">
             </button>
-            <button @click="playerSelect" name="tijera" class="game rounded-circle icon border-warning mt-n1" id="tijera">
+            <button @click="playerSelect" id="scissors" class="game rounded-circle icon border-warning mt-n1" id="tijera">
               <img src="/images/icon-scissors.svg" alt="scissors" class="center">
             </button>
           </div>
