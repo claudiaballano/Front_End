@@ -78,11 +78,11 @@ const app = Vue.createApp({
                 this.result="You lose"
                 
             }else if (this.showPaper && this.showRockComputer ){
-                this.score--
+                this.score++
                 this.result="You lose"
             }
             else if (this.showRock && this.showPaperComputer ){
-                this.score++
+                this.score--
                 this.result="You win"
             }
             else if (this.showRock && this.showScissorsComputer ){
