@@ -14,7 +14,7 @@ const app = Vue.createApp({
       for (ace in aces) {
         this.cards.push({
           value: numbers[number] + aces[ace],
-          image: `/png/${numbers[number]}_of_${acesNames[ace]}.png`
+          image: `/svg-cards/${numbers[number]}_of_${acesNames[ace]}.svg`
         })
       }
     }

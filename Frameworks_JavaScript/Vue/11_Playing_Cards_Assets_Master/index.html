@@ -8,11 +8,11 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <style>
         .card-fade-enter-active {
-            animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) forwards ;
+            animation: text-focus-in 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) forwards ;
         }
 
         .card-fade-leave-active {
-            animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) forwards reverse ;
+            animation: text-focus-in 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) forwards reverse ;
         }
 
   
@@ -34,7 +34,7 @@
 <body>
 
 
-    <div class="container mx-auto grid grid-cols-3 gap-2" id="app">
+    <div class="container mx-auto grid grid-cols-6 gap-2" id="app">
         <!-- IMPORTANTE: no usar camel Case-->
         <span class="" v-for="card in cards" :key="card.value">
             <!-- Importante: son dinámicas estas propiedades, en el momento de renderizar el HTML no se conoce su valor -->
