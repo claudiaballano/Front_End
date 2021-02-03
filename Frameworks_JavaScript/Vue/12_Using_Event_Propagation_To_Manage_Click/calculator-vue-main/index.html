@@ -15,8 +15,9 @@
     <div id ="app">        
      <section class="calculator">
       <form>
-          <div @click="divButton" v-if="show">
+          <div @click="divButton">
               <input v-model = "inputNumber" type="text" class="screen"> 
+        </div>
       </fom>
       <!--Podemos utilizar la propagación de eventos a nuestro favor-->
       <!--Para eliminar los clicks anteriores podemos utilizar expresiones regulares @click="[a-zA-Z0-9\(\)'+-/*]*"-->

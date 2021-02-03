@@ -2,11 +2,7 @@ const app = Vue.createApp({
     data() {
         return {
             inputNumber: "",
-            show : false
         }
-    },
-    mounted() {
-        this.show = true
     },
     methods: {
         clearAll(){
